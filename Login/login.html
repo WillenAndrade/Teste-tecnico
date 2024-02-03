@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Cadastrar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="header">
+                <h2>Login</h2>
+            </div>
+            <form id="form">
+                <div class="btns-control">
+                    <a href="../Login/login.html" id="btn-login">Login</a>
+                    <a href="../Cadastro/cadastro.html" id="btn-cadastro">Cadastro</a>
+                </div>
+                <div class="form-control">
+                   <input type="text" id="email" autocomplete="off" maxlength="34" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-password">
+                    <input type="password" id="password" autocomplete="off" maxlength="18" placeholder="Digite sua senha" required>
+                </div>
+                <div id="conectado"><input type="checkbox" id="input-conectado"> <label for="input-conectado">Manter-me conectado</label></div>
+                <div class="button-control">
+                    <button href="#" id="btn-logar">Logar</button>
+                </div>
+                 <div class="form-control">
+                    <p class="link-login">Não tem conta?</p><a href="../Cadastro/cadastro.html" class="link-login">Cadastre-se</a>
+                 </div>
+            </form>
+        </div>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>
