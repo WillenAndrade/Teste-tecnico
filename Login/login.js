@@ -8,6 +8,11 @@ form.addEventListener("submit", (e) => {
 })
 
 const handleLogin = () => {
-    window.alert(`        Email: ${email.value}
+    if(email.value && password.value) {
+        window.alert(`        Email: ${email.value}
         Senha: ${password.value}`)
+    } else {
+        console.log("Preencha todos os campos...")
+    }
+   
 }

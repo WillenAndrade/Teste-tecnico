@@ -1,22 +1,26 @@
-    const userName = document.querySelector("#name")
+    const form = document.querySelector("#form")
+    const username = document.querySelector("#name")
+    const email = document.querySelector("#email")
     const phone = document.querySelector("#phone")
     const cpf = document.querySelector("#cpf")
-    const password = document.querySelector("#password")
     const btnCadastro = document.querySelector("#btn-cadastrar")
 
     const handleCadastro = () => {
-        window.alert(`        Nome: ${userName.value}
-        Email: ${email.value}
-        Contato: ${phone.value}
-        CPF: ${cpf.value}`)
+        if(username.value && email.value && phone.value && cpf.value) {
+            window.alert(`        Nome: ${username.value}
+            Email: ${email.value}
+            Contato: ${phone.value}
+            CPF: ${cpf.value}`)
+        } else {
+            console.log("Preencha todos os campos...")
+        }
     } 
 
     btnCadastro.addEventListener("click", () => {
         handleCadastro()
     })
-
+   
     // Função de aplicação de máscaras (obtida na internet)
-
         function mask(o,f){
         v_obj=o
         v_fun=f
@@ -43,7 +47,6 @@
         }
         function maskemail(v){
         // v=v.replace (/\S+@\S+\.\S+/);
-        console.log(email.value)
         return v;
         }
 
