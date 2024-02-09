@@ -6,5 +6,5 @@ Para executar os arquivos:
 1 - Baixe a pasta Login e a pasta Cadastro em sua máquina.
 2 - Coloque os dois arquivos dentro de uma pasta com  o nome do projeto (Teste-tecnico).
 3 - Abra a pasta com nome do projeto em um editor de código de sua prefêrencia.
-4 - Execute o arquivo cadastro.html ou login.html, que automaticamente irá abrir em seu navegador.
+4 - Execute o arquivo cadastro.html ou login.html, que automaticamente irá abrir o projeto em seu navegador.
 
